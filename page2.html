@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--bootstrap/head-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--bootstrap/head-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--removed-->
+    <link rel="stylesheet" href="page1.css">
+     <!--extra -->
+     <link rel="stylesheet" href="navibar.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="pagg2.css">-->
+     <!--extra 1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Our Services</title>
+    <!--header-->
+    <header>
+        <!--<header style="background-color: rgb(255,61,142);">
+            logo,,,,,,,style="color: rgb(255,196,226);"-->
+        <a href="page1.html" class="logo" > Go Girls Travel</a>
+         <nav class="navigation">
+            <a href="page3.html">About us</a>
+            <a href="page2.html">Services</a>
+            <a href="page6.html">Trips</a>
+            <a href="page10.html">contact us</a>
+            <a href="page11.html">Reviews</a>
+            <!--form-->
+            <a href="page12.html">form</a>
+         </nav>
+      </header>
+   <!--css-->
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,200;1,400;1,800;1,900&display=swap');
+
+    
+*{
+    font-family: 'Poppins', sens-seri;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   
+}
+/*header{
+    width: 100%;
+   position: fixed;
+    z-index: 999;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}*/
+/*.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 7000;
+    font-size: 1.8em;
+    letter-spacing: 4px;
+}
+
+.navigation a{
+    color:rgb(255,196,226) ;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-left: 30px;
+    letter-spacing: 4px;
+}*/
+
+.navigation a:hover{
+    color: antiquewhite;
+}
+
+.title{
+    display: flex; 
+    justify-content: center;
+    /*changed color*/
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    /*extra*/
+
+ }
+ .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+     /*extra*/
+}
+.card{
+    background-color: rgb(255, 196, 226);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgb(233, 146, 182);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: rgb(255, 61, 142);
+    font-size: 8em;
+    text-align: center;
+}
+.info {
+    text-align: center;
+}
+.info h3{
+    color:rgb(255, 61, 142) ;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+   </style>
+</head>
+<body>
+ 
+
+    <section class="cards" id="services">
+    <h2 class="title"><br><br>services</h2>
+    <div class="content">
+         <!--1-->
+         <div class="card">
+                <div class="icon">
+                <i class="fa fa-hotel"> </i>
+                </div>
+            
+                <div class="info"> 
+                <!--<h3>Hotels</h3>-->
+                <a href="page4.html"><h3>Hotels</h3></a>
+                <p> We offer you comfortable accommodation in the finest hotels at all prices</p>
+                </div>
+         </div>
+         <!--2-->
+         <div class="card">
+                <div class="icon">
+                <i class="fa fa-plane"></i>
+                </div>
+            
+                <div class="info"> 
+                <h3>Airline</h3>
+                <p> We offer you comfortable accommodation in the finest hotels at all prices</p>
+                </div>
+         </div>
+        <!--3-->
+         <div class="card">
+                <div class="icon">
+                    <!--extra 2-->
+                <i class="fa fa-location">📍</i>
+                </div>
+            
+                <div class="info"> 
+                <h3>Location</h3>
+                <p> We offer you comfortable accommodation in the finest hotels at all prices</p>
+                </div>
+         </div>
+    </div>
+    </section>    
+     <!--bootstrap/body-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--bootstrap/body-->
+</body>
+</html>

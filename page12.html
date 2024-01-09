@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--bootstrap/head-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--bootstrap/head-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="page1.css">
+<!--extra-->
+   <link rel="stylesheet" href="navibar.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<!--extra-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>form</title>
+<header style="background-color: rgb(255,61,142);">
+    <a href ="page1.html" class="logo">Go Girls Travel</a>
+    <nav class="navigation">
+        <a href="page3.html">About us</a>
+        <a href="page2.html">Services</a>
+        <a href="page6.html">Trips</a>
+        <a href="page10.html">contact us</a>
+        <a href="page11.html">Reviews</a>
+        <!--form-->
+        <a href="page12.html">form</a>
+ 
+    </nav>
+</header>
+<style>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family:'Poppins',sans-serif;
+       
+    }
+    .body{
+        margin-top: 3cm;
+        align-items: flex-end;
+       
+        
+    }
+    .container{
+  width:3cm;
+   display:flex;
+  justify-content: center;
+  
+  margin-top: 35px;
+}
+ /*(form title)   minor travel consent form*/
+.contact h2{
+     font-size: 35px;
+     color: #333;
+     font-weight: 700;
+     margin-bottom: 1cm;
+     /*text-decoration: underline;*/
+    
+ }  
+
+
+ /*form color traits*/
+ .contactform form{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  /*color:rgb(255, 61, 142);*/
+  padding: 1cm;
+  width: 15cm;
+  padding-left:1cm;
+  padding-right:1cm;
+  padding-top:.3cm;
+  padding-bottom:.3cm;
+  
+ }
+ /* around box..*/
+ .contactform .inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+ }
+/*box functional traits*/
+ .contactform .inputbox input,
+ .contactform .inputbox textarea{
+  width: 100%;
+  padding: 5px 0;
+  /*entered font size*/
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline:none;
+ }
+ 
+ /*submit*/
+ .contactform .inputbox input[type="submit"]{
+  width: 100px;
+  background:rgb(40, 39, 39);
+  color:white;
+  border:none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
+ }
+ /*submit hover*/
+ .contactform .inputbox input[type="submit"]:hover{
+  background:black;
+ }
+ /*check*/
+ 
+ .contactform input[type="button"]{
+  width: 100px;
+  background:rgb(40, 39, 39);
+  color:white;
+  border:none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
+ }
+ /*check hover*/
+ .contactform input[type="button"]:hover{
+  background:black;
+ }
+ /*radio button*/
+
+ 
+ 
+ /*background*/
+ .contact{
+     position: relative;
+     min-height: 100vh;
+     padding: 50px 100px;
+     /*display: flex;*/
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-size: cover;
+     background-color: pink;
+  }
+  #datetime{
+    font-weight: 900;
+  }
+  #date:hover{
+     font-weight: 500;
+     color:red;
+    transition: 0.7s ease;
+  }
+ /*date time background*/
+ .contain{
+    background-color: pink;
+ }
+ /*datetime*/
+ #datetime{
+    color: black;
+  /*color:rgb(255, 61, 142);*/
+  background-color:white ;
+  font-weight:500 ;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-left: 13cm;
+  margin-top: .2cm;
+  transition: 0.7s ease;
+}
+#datetime:hover{ 
+transform: scale(1.1);
+/*color: black;*/
+color:rgb(255, 61, 142);
+}
+/*yes no*/
+input[type="radio"] {
+    margin-left:40px;
+    /*margin-bottom: 15.4px;*/
+    
+}
+
+
+</style>
+<title>Form</title>
+</head>
+<body>
+    <div class="contain">
+   <br><br><br>
+   <span id="datetime"></span></div>
+    <!--java script-->
+    <script>
+    // Get current date and time
+  var now = new Date();
+  var datetime = now.toLocaleString();
+
+  // Insert date and time into HTML
+  document.getElementById("datetime").innerHTML = datetime;
+  //submit
+  function done()
+{
+     alert ("thank you for submitting this form, we will get back to you as soon as possible !");
+}   
+//radio
+
+            var radios = document.getElementsByName('level');
+            function clickbtn() {
+                var radioval=0;
+                if(radios[0].checked)
+                   alert("You have accepted the terms for emergency medical treatment.");  
+                else    alert("You have refused emergency medical treatment!");  
+        }
+ //age
+ 
+  function checkage() {
+        // Get the age input element
+        var ageInput = document.getElementById("ageInput");
+
+        // Get entered age val
+         var enteredAge = parseInt(ageInput.value);
+       // Check if the entered age meets the criteria
+        if (enteredAge > 11 && enteredAge < 17) {
+           document.getElementById("agecontent").innerHTML = alert("Age is valid!");
+        } else {
+         document.getElementById("agecontent").innerHTML = alert("Please enter a valid age (over 11 and less than 17).");
+          }
+    }   
+    //validate email
+    function validateEmail() {
+        // Get the email input elements
+        var emailInput = document.getElementById("emailInput");
+        var confirmEmailInput = document.getElementById("confirmEmailInput");
+
+        // Get the entered email values
+        var enteredEmail = emailInput.value;
+        var enteredConfirmEmail = confirmEmailInput.value;
+
+        // Check if the emails match
+        if (enteredEmail === enteredConfirmEmail) {
+            alert("Emails match!");
+        } else {
+            alert("Emails do not match. Please enter the email again.");
+            // Clear the input fields for better user experience
+            emailInput.value = "";
+            confirmEmailInput.value = "";
+        }
+    }
+    //check pass
+    function checkPassword() {
+        // Get the password input element
+        var passwordInput = document.getElementById("passwordInput");
+
+        // Get the entered password value
+        var enteredPassword = passwordInput.value;
+
+        // Check if the password is 8 digits
+        if (enteredPassword.length === 8 && /^\d+$/.test(enteredPassword)) {
+            alert("Password is 8 digits.");
+        } else {
+            alert("Password must be 8 digits. Please enter a valid password.");
+            // Clear the input field for better user experience
+            passwordInput.value = "";
+        }
+    }
+
+        
+    </script>
+   <!--java script-->
+
+   
+   <!--html-->
+<section class="contact">
+<!--1  title-->
+
+      <div class="content">
+    <h2>Minor Travel Consent Form</h2>
+     
+         </div>
+<div class="container">
+<!--2 Minor Travel Consent Form -->
+    
+    <div class="contactform">
+                    
+        <form>
+            <form id="ageselection">
+ 
+            <!-- Minor info -->
+            <h4>Minor info:</h4>
+            <div class="inputbox">
+                <input    type="text" name="" placeholder="Full Name" >
+            </div>
+        
+            <!-- enter age -->
+       
+        <p id="agecontent"></p>
+            <div class="inputbox" ><!--extra-->
+                <input type="text" name="ages" placeholder="Age *(must be over 11yo)" id="ageInput">
+            </div>
+            <p id="agecontent"></p>
+            <input onclick="checkage();"     type="button"  value="checkage" >
+            </form>
+             <!-- Authorization for emergency medical treatment -->
+      <form id="levelselection">
+           <p id="levelcontent"></p>
+           <h5>Authorization for emergency medical treatment: </h5>
+           <input type="radio" name="level" >Yes   
+           <input type="radio" name="level" >No &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+           
+           <input onclick="clickbtn();"  id="accept"   type="button"  value="accept" >
+        </form>
+    
+
+<!-- 3 Contactform parents-->
+
+        <form>
+            <!-- Parent/Guardian Info -->
+            <h4>Parent/Guardian Info:</h4>
+            <div class="inputbox">
+                <input type="text" name="" placeholder="Full Name">
+            </div>
+         </form>
+          <form id="emailForm">
+            <div class="inputbox">
+                <input type="email" name="valemail" id="emailInput" placeholder="Email">
+            </div>
+            <div class="inputbox">
+                <input type="email" id="confirmEmailInput" placeholder="Confirm Email">
+            </div>
+            <input onclick="validateEmail();" type="button" value="validate">
+        </form>
+    
+             <!-- password -->
+             <form id="passwordForm">
+                <div class="inputbox">
+                    <input type="password" id="passwordInput" placeholder="Password *(8 digits)">
+                    <input onclick="checkPassword();" type="button" value="check">
+                </div>
+                <!--<input onclick="checkPassword();" type="button" value="check">-->
+            </form>
+            <form>
+          <!--message-->
+          <div class="inputbox">
+            <input type="text"  name=""   placeholder="Type Your Message..."     required="required"   cols="40" rows="6" style="height: 2cm;">
+           </div>
+
+       <!-- Submit -->
+            <div class="inputbox">
+                
+                <input onclick="done();"     type="submit" name="" value="Send"  ><!--add js//////////////////////////////////-->
+             </div>
+        </form>
+</div>
+</div>
+<!--submit-->
+
+                   
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--bootstrap/body-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--bootstrap/body-->
+</body>

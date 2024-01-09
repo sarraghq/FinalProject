@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--bootstrap/head-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--bootstrap/head-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="page1.css">
+<!--extra-->
+   <link rel="stylesheet" href="navibar.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--css for page 3??-->
+   <link rel="stylesheet" href="pagg3.css">
+<!--extra-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Reviews</title>
+  <header style="background-color: rgb(255,61,142);">
+    <a href ="page1.html" class="logo">Go Girls Travel</a>
+    <nav class="navigation">
+        <a href="page3.html">About us</a>
+        <a href="page2.html">Services</a>
+        <a href="page6.html">Trips</a>
+        <a href="page10.html">contact us</a>
+        <a href="page11.html">Reviews</a>
+        <!--form-->
+        <a href="page12.html">form</a>
+ 
+    </nav>
+</header>
+<!--header-->
+  <style>
+    *{
+        margin: 0;
+       
+        padding: 0;
+        font-family:'Poppins',sans-serif;
+    }
+.review {
+    background-size: cover;
+
+   /**/
+    /*background-color:white;*/
+
+    background-color:pink;
+    
+    color:#434343;
+    /*text align*/
+    text-align: center ;
+    padding:30px 0;
+
+}
+/*frame test*/
+.col .review{ 
+    border-radius: 25px;
+    /*border: 2px solid black;*/
+    border: 2px solid white;
+    background-color: white;
+
+}
+/*hover*/
+.col .review:hover{ 
+    border-radius: 25px;
+    /*border: 2px solid black;*/
+    box-shadow: rgb(41, 26, 26);
+    border: 2px solid palevioletred;
+
+}
+.inner{
+
+    background:pink;
+    max-width: 2000px;
+    margin:auto;
+    overflow: hidden;
+    padding:0 10px;
+}
+/*line*/
+.border{
+    width: 160px;
+    height:7px;
+    /*underline*/
+    background:palevioletred;
+    margin: 26px auto;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+}
+.col{
+    /*frame*/
+   /* background-color: rgb(255, 255, 255);*/
+    flex:33.33%;
+    max-width:33.33%;
+    /**/
+    box-sizing:content-box;
+    padding: 15px;
+}
+
+
+ img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.name{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.name:hover{
+    text-decoration: underline;
+}
+/*reviews title*/
+.inner h1{
+    font-size: 40px;
+    font-weight: 600;
+    color:#fff;
+    /*text-shadow: 0 0 5px rgb(236, 120, 139);*/
+}
+/*star*/
+.checked {
+  color: orange;
+  cursor: pointer;
+}
+
+@media screen and (max-width:960px){
+.col{
+    flex: 100%;
+    max-width: 80%;
+}}
+@media screen and (max-width:600px){
+.col{
+    flex: 100%;
+    max-width: 1000%;
+}}
+  </style>
+
+
+<!---->
+<title>Reviews</title>
+</head>
+<body>
+    <!--first section-->
+     <div class="review">
+     <div class="inner">
+        <br>
+        <br>
+                <h1>Reviews</h1>
+     <div class="border"> </div>
+     <div class="row">
+                    <!--person 1-->
+                    <div class="col">
+                        <div class="review">
+                            <!--pic 1-->
+                            <img src="imags/person1.jpg" alt="Avatar" >
+                            <!--name-->
+                            <div class="name">Emily Thompson</div>
+                            <!--star-->
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <!--review 1-->
+                           <p>Go Girls Travel made my journey unforgettable!
+                             From seamless bookings to empowering solo adventures,
+                             they redefine travel for women.</p>
+                        </div>
+                    </div>
+                    <!--person 2-->
+                    <div class="col">
+                        <div class="review">
+                            <!--pic 2-->
+                            <img src="imags/person2.jpg" alt="Avatar" >
+                            <!--name-->
+                            <div class="name">Sara Mitchell</div>
+                             <!--star-->
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <!--review 2-->
+                           <p>Exceptional service at Go Girls Travel!
+                             Their attention to detail and focus on creating safe,
+                             empowering travel experiences set them apart.</p>
+                        </div>
+                    </div>
+                    <!--person 3-->
+                    <div class="col">
+                        <div class="review">
+                           <!--pic 3-->
+                            <img src="imags/MicrosoftTeams-image (11).png" alt="Avatar" >
+                            <!--name-->
+                            <div class="name">Mia Jensen</div>
+                            <!--star-->
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <!--review 3-->
+                           <p>Go Girls Travel is my go-to agency for memorable trips.  
+                            However, encountered a minor hiccup that left room for improvement in communication.
+                            </p>
+                        
+                        </div>
+                    </div>
+                    <!--person 4-->
+                    <div class="col">
+                        <div class="review">
+                           <!--pic 4-->
+                            <img src="imags/person4.jpg" alt="Avatar" >
+                            <!--name-->
+                            <div class="name">Ava Ramirez</div>
+                            <!--star-->
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <!--review 4-->
+                           <p>incredible experiences with Go Girls Travel! As a solo traveler, 
+                            their support and curated itineraries exceeded my expectations. Highly recommend!</p>
+                        </div>
+                    </div>
+    </div>
+    </div>
+    </div>        
+    </div>
+    <!--bootstrap/body-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--bootstrap/body-->
+</body>
+</html>

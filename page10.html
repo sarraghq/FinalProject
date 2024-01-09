@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--bootstrap/head-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--bootstrap/head-->
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="navibar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Contact Us - Travel Agency</title>
+  <link rel="stylesheet" href="page1.css">
+
+  <header>
+    <a href ="page1.html" class="logo">Go Girls Travel</a>
+    <nav class="navigation">
+        <a href="page3.html">About us</a>
+        <a href="page2.html">Services</a>
+        <a href="page6.html">Trips</a>
+        <a href="page10.html">contact us</a>
+        <a href="page11.html">Reviews</a>
+        <!--form-->
+        <a href="page12.html">form</a>
+ 
+    </nav>
+</header>
+<style>
+  .contact{
+     position: relative;
+     min-height: 100vh;
+     padding: 50px 100px;
+     /*display: flex;*/
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-size: cover;
+     background-color: pink;
+  }
+  .contact .content{/*size*/
+     max-width: 1000px;
+    
+     text-align: center;
+}
+/*title (contact us)*/
+ .contact .content h2{
+  margin-top: 1cm;
+ position:absolute;
+     font-size: 40px;
+    font-weight: 600;
+    color:#fff;
+    text-shadow: 0 0 5px rgb(236, 120, 139);
+    
+}
+.contact .content p{
+ 
+   margin-top: 2.5cm;
+  font-size:20px;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 0 0 5px rgb(236, 120, 139);
+  align-items: center;
+}
+.container{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 35px;
+}
+.container .contactinfo{
+  width: 50%;
+  display:flex;
+  flex-direction: column;
+}
+ 
+.container .contactinfo .box{
+   position:relative;
+   padding: 20px 0;
+ flex-direction: column;
+ 
+}
+ /*number/email design*/
+.container .contactinfo .box .text{
+  display:flex;
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: bolder;
+  color:black;
+  flex-direction: column;
+  font-weight: 300;
+}
+/*(info title) phone/email */
+.container .contactinfo .box .text h3{
+  font-weight: 800;
+  color:black;
+  font-size: larger;
+}
+ /*(form title)send a message */
+.contactform h2{
+     font-size: 30px;
+     color: #333;
+     font-weight: 500;
+ }  
+ /*form color traits*/
+ .contactform form{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  padding: 1cm;
+  width: 15cm;
+ }
+ /* around box..*/
+ .contactform .inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+ }
+/*box functional traits*/
+ .contactform .inputbox input,
+ .contactform .inputbox textarea{
+  width: 100%;
+  padding: 5px 0;
+  /*entered font size*/
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline:none;
+ }
+ /*inputbox span*/
+ .contactform .inputbox span{
+  position: absolute;
+  left: 0;
+  /*put them inside box*/
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  /*traits*/
+  pointer-events: none;
+  transition: 0.4s;
+  /*color before hover*/
+  color: #666
+ }
+ /*inputbox span transition*/
+ .contactform .inputbox input:focus~span{/*represents an element  that has received focus(click)*/
+   /*color after hover*/
+  color:#e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+ }
+ /*submit*/
+ .contactform .inputbox input[type="submit"]{
+  width: 100px;
+  background:rgb(40, 39, 39);
+  color:white;
+  border:none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+ }
+ /*submit hover*/
+ .contactform .inputbox input[type="submit"]:hover{
+  background:black;
+ }
+/*maximize/minimize*/
+/* to apply part of a style sheet based on the result of one or more media queries*/
+@media (max-width:991px){
+  .contact{
+    padding :50px;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .contactinfo{
+    margin-bottom: 40px;
+  }
+}
+</style>
+</head>
+ 
+
+ 
+<body><!--first section-->
+   <!--header was here /moved to head-->
+
+   <section class="contact">
+<!-- 1 -->
+       <div class="content">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us at Go Girls Travel!
+                Our team is here to assist you every step of the way.
+                Feel free to contact us via phone , email or by filling the form below:</p>
+       </div>
+<!-- 2 -->
+<div class="container">
+    <!--(A) info-->
+      <div class="contactinfo">
+            <!--phone -->
+                <div class="box">
+                <div class="text"><h3>☎ Phone</h3><p>+1 (555) 123-4567</p></div>
+                </div>
+            <!--email -->
+                <div class="box">
+                <div class="text"><h3>✉ Email</h3><p>gogirlstravel@gmail.com</p></div>
+                </div>
+            <!--location-->
+                <div class="box">
+                <div class="text"><h3>𖡡 Location</h3><p>33 market  Street, <br> Amman, Jordan</p></div>
+                </div>
+      </div>
+   <!--(B) fill  form -->
+      <div class="contactform">
+       <form>      
+                 <h2>Send Message</h2> <!--form title-->
+             <!--enter name-->
+                 <div class="inputbox">
+                   <input type="text" name="" required="required">
+                   <span>Full Name</span> <!-- span is an easly styled inline container -->
+                 </div>
+             <!--enter email-->
+                 <div class="inputbox">
+                   <input type="email" name="" required="required">
+                   <span>Email</span>
+                 </div>
+             <!--type message-->
+                 <div class="inputbox">
+                  <input type="text"  name="" required="required"   cols="40" rows="6" style="height: 2cm;">
+                  <span>Type Your Message...</span>
+                 </div>
+             <!--submit-->
+                 <div class="inputbox">
+                   <input type="submit" name="" value="Send"  >
+                </div>
+        </form>
+      </div>
+      <!--bootstrap/body-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--bootstrap/body-->
+</body>
+</html>
