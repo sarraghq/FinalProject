@@ -37,10 +37,7 @@ header {
 .navigation a:hover{
   color: antiquewhite;
 }
-/*comment */
-/*section{
-  padding: 100px 200px;
-}*/
+
 
 
 section{
@@ -50,7 +47,7 @@ section{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /*pic////////////////////////////////////////////////////*/
+  /*pic*/
   background-image: url("bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -86,7 +83,7 @@ transform: scale(1.1);
 
 }
 
-/*extra */
+
 
 .content {
   display: flex;
